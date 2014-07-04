@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>流逝的价值</title>
+    <link rel="stylesheet" href="index.min.css"/>
+    <script src="index.min.js"></script>
+</head>
+<body>
+    <div class="rows">
+        <span class="label">秒单价</span>
+        <span class="data"><input id="unitPrice" type="number" min="1" max="100" step="5" value="1"/>元</span>
+    </div>
+    <div class="rows">
+        <span id="startAndStop" onclick="startToggle()">开始</span>
+        <span id="reset" onclick="reset()">重置</span>
+    </div>
+    <div class="rows">
+        <span class="label">流失的时间</span>
+        <span id="timePassed" class="data"></span>秒
+    </div>
+    <div class="rows">
+        <span class="label">流失的价值</span>
+        <span id="priceCosted" class="data"></span>元
+    </div>
+</body>
+</html>
